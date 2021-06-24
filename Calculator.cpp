@@ -1,16 +1,18 @@
-// Calculator.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+#include <string>
+#include "Calculator.h"
+using namespace std;
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    PrintString("");
+    return 0;
 }
 
-void Calculate()
+void PrintString(string text)
 {
-
+    cout << "test";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
