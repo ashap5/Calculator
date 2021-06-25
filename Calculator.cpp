@@ -1,7 +1,20 @@
 #include <iostream>
 #include <string>
-#include "Calculator.h"
+//#include "Calculator.h"
 using namespace std;
+
+float Calculator(float firstNumber, float SecondNumber, char Operation)
+{
+    switch (Operation)
+    {
+    default: return 0;
+    case '+': return firstNumber + SecondNumber;
+    case '-': return firstNumber - SecondNumber;
+    case '*': return firstNumber * SecondNumber;
+    case '/': return firstNumber / SecondNumber;
+    }
+}
+bool Calculated = true;
 
 void Print(size_t text)
 {
