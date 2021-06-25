@@ -10,19 +10,27 @@ void Print(size_t text)
 
 void StandartMode()
 {
+    Calculated = false;
     float FirstNumber;
     float SecondNumber;
     char Operation;
-    cout << "First Number: ";
+    cout << "\nFirst Number: ";
     cin >> FirstNumber;
     cout << "Second Number: ";
     cin >> SecondNumber;
     cout << "Operation: ";
     cin >> Operation;
     Print(Calculator(FirstNumber, SecondNumber, Operation));
+    Calculated = true;
 }
 int main()
 {
-    StandartMode();
-    return 0;
+    while (true)
+    {
+        if (Calculated == true)
+        {
+            StandartMode();
+        }
+       
+    }
 }

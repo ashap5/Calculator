@@ -9,3 +9,4 @@ float Calculator(float firstNumber, float SecondNumber, char Operation)
     case '/': return firstNumber / SecondNumber;
     }
 }
+bool Calculated= true;
