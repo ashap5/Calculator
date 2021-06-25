@@ -10,8 +10,7 @@ void Print(size_t text)
 
 void StandartMode()
 {
-    Calculated = false;
-    float FirstNumber;
+    float FirstNumber; 
     float SecondNumber;
     char Operation;
     cout << "\nFirst Number: ";
@@ -21,16 +20,11 @@ void StandartMode()
     cout << "Operation: ";
     cin >> Operation;
     Print(Calculator(FirstNumber, SecondNumber, Operation));
-    Calculated = true;
 }
 int main()
 {
     while (true)
     {
-        if (Calculated == true)
-        {
-            StandartMode();
-        }
-       
+        StandartMode();
     }
 }
