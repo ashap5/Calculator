@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include "Calculator.h"
-#include "test.h"
 
 using namespace std;
 
@@ -29,6 +28,4 @@ int main()
     //{
       //  StandartMode();
     //}
-    bool test;
-    cout << Test(test);
 }
