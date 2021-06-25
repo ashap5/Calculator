@@ -1,36 +1,28 @@
 #include <iostream>
 #include <string>
+#include "Calculator.h"
 using namespace std;
 
-void PrintString(string text)
+void Print(size_t text)
 {
     cout << text;
 }
 
-float Calculator(float firstNumber, float SecondNumber, string Operation)
+void StandartMode()
 {
-    if (Operation == "+")
-    {
-        return firstNumber + SecondNumber;
-    }
-    else if (Operation == "-")
-    {
-        return firstNumber - SecondNumber;
-    }
-    else if (Operation == "*")
-    {
-        return firstNumber * SecondNumber;
-    }
-    else if (Operation == "/")
-    {
-        return firstNumber / SecondNumber;
-    }
-    else return 0;
+    float FirstNumber;
+    float SecondNumber;
+    char Operation;
+    cout << "First Number: ";
+    cin >> FirstNumber;
+    cout << "Second Number: ";
+    cin >> SecondNumber;
+    cout << "Operation: ";
+    cin >> Operation;
+    Print(Calculator(FirstNumber, SecondNumber, Operation));
 }
-
 int main()
 {
-    cout << Calculator(1, 5, "*");
-    PrintString("\nCAUTE MORE");
+    StandartMode();
     return 0;
 }
