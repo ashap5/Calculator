@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include "Calculator.h"
+#include "test.h"
+
 using namespace std;
 
 void Print(size_t text)
@@ -23,8 +25,10 @@ void StandartMode()
 }
 int main()
 {
-    while (true)
-    {
-        StandartMode();
-    }
+    //while (true)
+    //{
+      //  StandartMode();
+    //}
+    bool test;
+    cout << Test(test);
 }
