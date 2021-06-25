@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include "Calculator.h"
+#include "Main.h"
+#include "Functions.h"
 
 using namespace std;
 
@@ -28,4 +30,5 @@ int main()
     //{
       //  StandartMode();
     //}
+    Print(Calculator(1, 1, '*'));
 }
