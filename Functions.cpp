@@ -15,4 +15,4 @@ float Calculator(float firstNumber, float SecondNumber, char Operation)
     case '*': return firstNumber * SecondNumber;
     case '/': return firstNumber / SecondNumber;
     }
-}
+}//test
