@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include "Calculator.h"
 #include "Main.h"
 #include "Functions.h"
 
@@ -18,17 +17,35 @@ void StandartMode()
     char Operation;
     cout << "\nFirst Number: ";
     cin >> FirstNumber;
+    if (FirstNumber > -99999999999999999)
+    {}
+    else
+    {
+        exit(65);
+    }
+
     cout << "Second Number: ";
     cin >> SecondNumber;
+    if (SecondNumber > -99999999999999999)
+    {}
+
+    else
+    {
+        cout << "Wrong Second Number";
+        exit(66);
+    }
     cout << "Operation: ";
     cin >> Operation;
     Print(Calculator(FirstNumber, SecondNumber, Operation));
 }
 int main()
 {
-    //while (true)
-    //{
-      //  StandartMode();
-    //}
-    Print(Calculator(1, 1, '*'));
+    while (true)
+    {
+        StandartMode();
+    }
 }
+
+
+//Error Codes:
+//999:Error
