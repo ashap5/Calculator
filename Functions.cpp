@@ -9,7 +9,7 @@ float Calculator(float firstNumber, float SecondNumber, char Operation)
     {
     default:
         cout << "Wrong Operator";
-        StandartMode();
+        return 0;
     case '+': return firstNumber + SecondNumber;
     case '-': return firstNumber - SecondNumber;
     case '*': return firstNumber * SecondNumber;
